@@ -1,0 +1,29 @@
+
+4. Printing statistics.
+
+=== shrike_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      624 wires
+     1826 wire bits
+      624 public wires
+     1826 public wire bits
+        9 ports
+        9 port bits
+      661 cells
+        1   BUFG
+       29   CARRY4
+      205   FDRE
+        3   FDSE
+       10   INV
+       77   LUT2
+       76   LUT3
+       32   LUT4
+       95   LUT5
+       97   LUT6
+        2   MUXF7
+        1   MUXF8
+       32   RAM32X1D
+        1   SRL16E
+

@@ -1,0 +1,8 @@
+read_verilog -sv "../src/main.v" "../src/shrike_top.v" "../src/simt_core.v"
+flatten -noscopeinfo
+synth_xilinx -nobram -noiopad -nodsp -abc9 
+clean
+autoname
+flatten -noscopeinfo
+tee -q -o post_synth_report.txt stat
+write_json "intermediate_netlist.json"

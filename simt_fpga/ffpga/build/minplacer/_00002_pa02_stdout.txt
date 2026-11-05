@@ -1,0 +1,196 @@
+
+Min-placement step: Set up placement.
+There are 125 instances. After combining instances in chains, there are 107 instances to place.
+There are 611 nets in the design, 0 of which have fanout larger than 49. Average fanout is 3.40.
+There is 1 clock in the design.
+Resource usages:
+ Type=L: Capacity=140 Utilized=103 NumInst=87. [ChainLen=1]=77 [ChainLen=2]=7 [ChainLen=4]=3
+ Type=M: Capacity=40 Utilized=15 NumInst=15. [ChainLen=1]=15
+ Type=IOB: Capacity=184 Utilized=5 NumInst=5.
+Min-placement step: Global placement and legalization.
+Improving the placement of 5 instances for resource type(s) of IOB: ...............................................................................................................
+Improving the placement of 5 instances for resource type(s) of IOB: ...............................................................................................................
+Improving the placement of 5 instances for resource type(s) of IOB: ...............................................................................................................
+Improving the placement of 5 instances for resource type(s) of IOB: ...............................................................................................................
+Legalizing non-chains of RBB-M: .(15,0|0,0)
+Improving the placement of 15 instances for resource type(s) of RBB-M: ...............................................................................................................
+Improving the placement of 15 instances for resource type(s) of RBB-M: .............................................................................................................
+Improving the placement of 5 instances for resource type(s) of IOB: .............................................................................................................
+Improving the placement of 5 instances for resource type(s) of IOB: ...............................................................................................................
+Legalizing chains on RBB-L: Legalizing chains of RBB-L:  Len=4.(3|0) Len=2.(22|0) *
+Legalizing non-chains of RBB-L: .(62,0|0,0)
+Improving the placement of 102 instances for resource type(s) of RBB-L RBB-M: ...............................................................................................................
+pClockAap: #TIlE=[1,1]
+#Parts=1
+	Part[0]: [0,0] W1 W0 E1 E0 S1 S0 N1 N0
+BuildRelationalGroups: PrProperty=0
+#Group=1
+	Group: #Clocks=1 DIRBM=NONE
+		Clock ID=0 #LoadParts=1 DIRBM=NONE
+			LoadPart[0]: DIRBM=NONE [0,0] COL=0 ROW=0 
+#Unassigned(align)=1. Initial filtering of signle-choices.
+#Unassigned(align)=1. Start working on aligned-choices.
+	GROUP(CLK=0):
+		PER_TILE_PORT: {EW}=P ASSIGN([0,0]E1=0) OK
+#Unassigned(noalign)=0. Work on the remainder with any-choices.
+#AssignedSingle=0 #AssignedAligned=1 #AssignedAny=0 #Unassigned=0
+=================================================================================================================
+#Parts=1
+	Part[0]: [0,0] W1 W0 E1=0 E0 S1 S0 N1 N0
+#Group=1
+	Group: #Clocks=1 DIRBM=EW
+		Clock ID=0 #LoadParts=1 DIRBM=EW
+			LoadPart[0]: DIRBM=EW [0,0] COL=0 ROW=0  ASSIGNED_PORT= [0,0]E1=0
+pClockAap: SUCCESSFUL.
+Min-placement step ends: Global placement and legalization. Runtime: 0:0:35 (CPU time), 0:0:35 (real time); peak memory: 1306MB.
+
+
+There are 125 instances. After combining instances in chains, there are 107 instances to place.
+There are 611 nets in the design. Average fanout is 3.40.
+There is 1 clock in the design.
+Resource usages:
+ Type=L: Capacity=140 Utilized=103 NumInst=87. [ChainLen=1]=77 [ChainLen=2]=7 [ChainLen=4]=3
+ Type=M: Capacity=40 Utilized=15 NumInst=15. [ChainLen=1]=15
+ Type=IOB: Capacity=184 Utilized=5 NumInst=5.
+Min-placement step: Replication (mode=1).
+pClockAap: #TIlE=[1,1]
+#Parts=1
+	Part[0]: [0,0] W1 W0 E1 E0 S1 S0 N1 N0
+BuildRelationalGroups: PrProperty=0
+#Group=1
+	Group: #Clocks=1 DIRBM=NONE
+		Clock ID=0 #LoadParts=1 DIRBM=NONE
+			LoadPart[0]: DIRBM=NONE [0,0] COL=0 ROW=0 
+#Unassigned(align)=1. Initial filtering of signle-choices.
+#Unassigned(align)=1. Start working on aligned-choices.
+	GROUP(CLK=0):
+		PER_TILE_PORT: {EW}=P ASSIGN([0,0]E1=0) OK
+#Unassigned(noalign)=0. Work on the remainder with any-choices.
+#AssignedSingle=0 #AssignedAligned=1 #AssignedAny=0 #Unassigned=0
+=================================================================================================================
+#Parts=1
+	Part[0]: [0,0] W1 W0 E1=0 E0 S1 S0 N1 N0
+#Group=1
+	Group: #Clocks=1 DIRBM=EW
+		Clock ID=0 #LoadParts=1 DIRBM=EW
+			LoadPart[0]: DIRBM=EW [0,0] COL=0 ROW=0  ASSIGNED_PORT= [0,0]E1=0
+pClockAap: SUCCESSFUL.
+Min-placement step ends: Replication (mode=1). Runtime: 0:0:10 (CPU time), 0:0:10 (real time); peak memory: 1339MB.
+
+
+There are 125 instances. After combining instances in chains, there are 107 instances to place.
+There are 611 nets in the design. Average fanout is 3.40.
+There is 1 clock in the design.
+Resource usages:
+ Type=L: Capacity=140 Utilized=103 NumInst=87. [ChainLen=1]=77 [ChainLen=2]=7 [ChainLen=4]=3
+ Type=M: Capacity=40 Utilized=15 NumInst=15. [ChainLen=1]=15
+ Type=IOB: Capacity=184 Utilized=5 NumInst=5.
+Min-placement step: Detaild placement (mode=2).
+Improving the placement of 5 instances for resource type(s) of IOB: ...............................................................................................................
+Long connection estimation: ...........
+Short connection estimation: ...........
+[ITER=0] WNS=-24484,M=13.242 TNS=-7304814 PathNumObj=7 *
+[ITER=1] WNS=-24234,M=13.117 TNS=-7294794 PathNumObj=6 *
+[ITER=2] WNS=-24074,M=13.037 TNS=-7300680 PathNumObj=5 *
+[ITER=3] WNS=-23681,M=12.840 TNS=-7194820 PathNumObj=5 *
+[ITER=4] WNS=-23201,M=12.600 TNS=-7170596 PathNumObj=4 *
+[ITER=5] WNS=-23072,M=12.536 TNS=-7182777 PathNumObj=6 *
+[ITER=6] WNS=-22993,M=12.496 TNS=-7169295 PathNumObj=5 ***&
+[ITER=7] WNS=-22914,M=12.457 TNS=-7175515 PathNumObj=5 ***&
+[ITER=8] WNS=-22788,M=12.394 TNS=-7175732 PathNumObj=6 *
+[ITER=9] WNS=-22747,M=12.373 TNS=-7172211 PathNumObj=5 ***&
+[ITER=10] WNS=-22747,M=12.373 TNS=-7174716 PathNumObj=5 ***&
+[ITER=11] WNS=-22669,M=12.334 TNS=-7170189 PathNumObj=4 ***&&&&&
+[ITER=12] WNS=-22669,M=12.334 TNS=-7170189 x PathNumObj=9 ***&
+[ITER=13] WNS=-22669,M=12.334 TNS=-7171303 PathNumObj=4 ***&&&&&
+[ITER=14] WNS=-22669,M=12.334 TNS=-7171303 x PathNumObj=9 ***&
+[ITER=15] WNS=-22669,M=12.334 TNS=-7173907 PathNumObj=4 ***&&&&&
+[ITER=16] WNS=-22669,M=12.334 TNS=-7173907 x PathNumObj=9 
+[ITER=16] NEAR WNS=-22669,M=12.334 TNS=-7173907 PathSlack=-22664 PathNumObj=5 ***&
+[ITER=17] WNS=-22669,M=12.334 TNS=-7156602 x PathNumObj=9 ***&
+[ITER=18] WNS=-22669,M=12.334 TNS=-7159888 PathNumObj=4 ***&&&&&
+[ITER=19] WNS=-22669,M=12.334 TNS=-7159888 x PathNumObj=9 ***&
+[ITER=20] WNS=-22669,M=12.334 TNS=-7163478 PathNumObj=4 ***&&&&&
+[ITER=21] WNS=-22669,M=12.334 TNS=-7163478 x PathNumObj=9 
+[ITER=21] NEAR WNS=-22669,M=12.334 TNS=-7163478 PathSlack=-22664 PathNumObj=5 ***&
+[ITER=22] WNS=-22669,M=12.334 TNS=-7170189 x PathNumObj=9 ***&
+[ITER=23] WNS=-22669,M=12.334 TNS=-7171303 PathNumObj=4 ***&&&&&
+[ITER=24] WNS=-22669,M=12.334 TNS=-7171303 x PathNumObj=9 ***&
+[ITER=25] WNS=-22669,M=12.334 TNS=-7173907 PathNumObj=4 ***&&&&&
+[ITER=26] WNS=-22669,M=12.334 TNS=-7173907 x PathNumObj=9 
+pClockAap: #TIlE=[1,1]
+#Parts=1
+	Part[0]: [0,0] W1 W0 E1 E0 S1 S0 N1 N0
+BuildRelationalGroups: PrProperty=0
+#Group=1
+	Group: #Clocks=1 DIRBM=NONE
+		Clock ID=0 #LoadParts=1 DIRBM=NONE
+			LoadPart[0]: DIRBM=NONE [0,0] COL=0 ROW=0 
+#Unassigned(align)=1. Initial filtering of signle-choices.
+#Unassigned(align)=1. Start working on aligned-choices.
+	GROUP(CLK=0):
+		PER_TILE_PORT: {EW}=P ASSIGN([0,0]E1=0) OK
+#Unassigned(noalign)=0. Work on the remainder with any-choices.
+#AssignedSingle=0 #AssignedAligned=1 #AssignedAny=0 #Unassigned=0
+=================================================================================================================
+#Parts=1
+	Part[0]: [0,0] W1 W0 E1=0 E0 S1 S0 N1 N0
+#Group=1
+	Group: #Clocks=1 DIRBM=EW
+		Clock ID=0 #LoadParts=1 DIRBM=EW
+			LoadPart[0]: DIRBM=EW [0,0] COL=0 ROW=0  ASSIGNED_PORT= [0,0]E1=0
+pClockAap: SUCCESSFUL.
+
+Placement timing:
+         Clock            Group  Achievable Frequency(MHz)
+--------------      -----------  -------------------------
+      core.clk  <UDEF_core.clk>                    40.538 
+
+
+Min-placement step ends: Detaild placement (mode=2). Runtime: 0:3:15 (CPU time), 0:3:16 (real time); peak memory: 1415MB.
+
+
+There are 125 instances. After combining instances in chains, there are 107 instances to place.
+There are 611 nets in the design. Average fanout is 3.40.
+There is 1 clock in the design.
+Resource usages:
+ Type=L: Capacity=140 Utilized=103 NumInst=87. [ChainLen=1]=77 [ChainLen=2]=7 [ChainLen=4]=3
+ Type=M: Capacity=40 Utilized=15 NumInst=15. [ChainLen=1]=15
+ Type=IOB: Capacity=184 Utilized=5 NumInst=5.
+Min-placement step: Delay and congestion estimation (fastest_delay=0 gentable=0 mode=1).
+Long connection estimation: ...........
+Short connection estimation: ...........
+Long connection estimation: (50)w---------(60)----------(70)----------(80)----------(90)----------(100)-
+Long connection estimation: (50)pxxxxxxxxx(60)xxxxxxxxxx(70)xxxxxxxxxx(80)xxxxxxxxxx(90)xxxxxxxxxx(100)x
+pClockAap: #TIlE=[1,1]
+#Parts=1
+	Part[0]: [0,0] W1 W0 E1 E0 S1 S0 N1 N0
+BuildRelationalGroups: PrProperty=0
+#Group=1
+	Group: #Clocks=1 DIRBM=NONE
+		Clock ID=0 #LoadParts=1 DIRBM=NONE
+			LoadPart[0]: DIRBM=NONE [0,0] COL=0 ROW=0 
+#Unassigned(align)=1. Initial filtering of signle-choices.
+#Unassigned(align)=1. Start working on aligned-choices.
+	GROUP(CLK=0):
+		PER_TILE_PORT: {EW}=P ASSIGN([0,0]E1=0) OK
+#Unassigned(noalign)=0. Work on the remainder with any-choices.
+#AssignedSingle=0 #AssignedAligned=1 #AssignedAny=0 #Unassigned=0
+=================================================================================================================
+#Parts=1
+	Part[0]: [0,0] W1 W0 E1=0 E0 S1 S0 N1 N0
+#Group=1
+	Group: #Clocks=1 DIRBM=EW
+		Clock ID=0 #LoadParts=1 DIRBM=EW
+			LoadPart[0]: DIRBM=EW [0,0] COL=0 ROW=0  ASSIGNED_PORT= [0,0]E1=0
+pClockAap: SUCCESSFUL.
+
+Placement timing:
+         Clock            Group  Achievable Frequency(MHz)
+--------------      -----------  -------------------------
+      core.clk  <UDEF_core.clk>                    40.538 
+
+
+Min-placement step ends: Delay and congestion estimation (fastest_delay=0 gentable=0 mode=1). Runtime: 0:0:10 (CPU time), 0:0:10 (real time); peak memory: 1374MB.
+
+

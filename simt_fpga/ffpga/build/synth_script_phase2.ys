@@ -1,0 +1,6 @@
+read_json "intermediate_netlist.json"
+tee -q -o design_ports.txt portlist
+write_verilog "post_synth_results.v"
+write_edif "netlist.edif"
+tee -q -o post_synth_report.txt stat
+tee -q -o full_interface_ports.txt portlist

@@ -1,0 +1,46 @@
+####   Resource Utilization Report   ####
+
+    Top level module name: shrike_top
+
+    Resource usage:
+
+        CLB LUT5s:    678/1120 (60.54%)
+            Lut5:                          584 (52.14%)
+            Lut5 for Shift-register:       2 (0.63%)
+            Lut5 for Distributed memory:   92 (28.75%)
+
+        FFs:    209
+        CLB FFs: 204/1120 (18.21%)
+        IOB FFs: 5/736 (0.68%)
+
+        CLBs:      118/140 (84.29%)
+        Tiles:     1/1 (100.00%)
+
+        RTL Input ports:     4 
+        RTL Output ports:    5 
+        GPIOs:               0/19 (0.00%)
+
+        PLLs:        0/1 (0.00%)
+        OSCs:        0/1 (0.00%)
+        4k BRAMs:    2/8 (25.00%)
+
+        1 Clock
+           Clock 0: net   819, core.clk, Fanout: 98 CLBs
+           Total 1 unique clocks
+
+####   Resource Utilization Complete   ####
+
+TILE-REQ:		0		0		0		1
+
+### Total FPGA resources from current floorplan: ###
+                       184 IOBs
+                       140 Logic 6-LUT CLBs
+                              40 CLBs support RAM/SR
+
+Usage of Logic CLBs is 84.3%.
+    Logic-Memory CLB for RAM/Shift-Register is 37.5%.
+Usage of LUTs is 82.9%.
+    dual-LUTs is 13.6%.
+Usage of FF is 32.0%.
+    dual-FF is 4.5%.
+Usage of IO CLB is 2.7%.

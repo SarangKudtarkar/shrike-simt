@@ -1,0 +1,10 @@
+module shrike_top
+input [0:0] clk
+output [0:0] clk_en
+input [0:0] sclk
+input [0:0] ss_n
+input [0:0] mosi
+output [0:0] miso
+output [0:0] miso_en
+output [0:0] led
+output [0:0] led_en
