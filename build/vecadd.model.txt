@@ -1,0 +1,3 @@
+SCR 03 01 04 01 05 09 02 06 0a 14 1e 28 32 3c 46 50 0d 15 22 29 37 45 48 56 00 00 00 00 00 00 00 00
+CNT cycles=27 instr=26 lane_ops=52 conflicts=0
+CHECK PASS

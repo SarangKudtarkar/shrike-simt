@@ -1,0 +1,50 @@
+%Warning-WIDTHEXPAND: rtl/simt_core.v:106:39: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'rs1' generates 3 bits.
+                                            : ... note: In instance 'shrike_top.core'
+  106 |                             a = rf[l*8+rs1];
+      |                                       ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.052
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: rtl/simt_core.v:107:39: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'rs2' generates 3 bits.
+                                            : ... note: In instance 'shrike_top.core'
+  107 |                             b = rf[l*8+rs2];
+      |                                       ^
+%Warning-WIDTHEXPAND: rtl/simt_core.v:108:39: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'rd' generates 3 bits.
+                                            : ... note: In instance 'shrike_top.core'
+  108 |                             d = rf[l*8+rd];
+      |                                       ^
+%Warning-WIDTHEXPAND: rtl/simt_core.v:122:35: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'rd' generates 3 bits.
+                                            : ... note: In instance 'shrike_top.core'
+  122 |                             rf[l*8+rd] <= res;
+      |                                   ^
+%Warning-WIDTHEXPAND: rtl/simt_core.v:130:39: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'rs1' generates 3 bits.
+                                            : ... note: In instance 'shrike_top.core'
+  130 |                             a = rf[l*8+rs1];
+      |                                       ^
+%Warning-WIDTHEXPAND: rtl/simt_core.v:131:39: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'rs2' generates 3 bits.
+                                            : ... note: In instance 'shrike_top.core'
+  131 |                             b = rf[l*8+rs2];
+      |                                       ^
+%Warning-WIDTHEXPAND: rtl/simt_core.v:155:41: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'rs1' generates 3 bits.
+                                            : ... note: In instance 'shrike_top.core'
+  155 |                             ad8 = rf[l*8+rs1] + {3'b000, imm5};
+      |                                         ^
+%Warning-WIDTHEXPAND: rtl/simt_core.v:166:56: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'rd' generates 3 bits.
+                                            : ... note: In instance 'shrike_top.core'
+  166 |                                 if (op == OP_LD) rf[l*8+rd] <= scr[ad];
+      |                                                        ^
+%Warning-WIDTHEXPAND: rtl/simt_core.v:167:70: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'rd' generates 3 bits.
+                                            : ... note: In instance 'shrike_top.core'
+  167 |                                 else             scr[ad]    <= rf[l*8+rd];
+      |                                                                      ^
+make: Entering directory '/home/sarang/embedded_projects/shrike-simt/build/obj'
+g++  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -I/home/sarang/embedded_projects/shrike-simt/model   -Os  -c -o tb_top.o ../../tb/tb_top.cpp
+g++ -Os  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -I/home/sarang/embedded_projects/shrike-simt/model   -c -o verilated.o /usr/local/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -I/home/sarang/embedded_projects/shrike-simt/model   -c -o verilated_threads.o /usr/local/share/verilator/include/verilated_threads.cpp
+python3 /usr/local/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vshrike_top.cpp Vshrike_top___024root__0.cpp Vshrike_top___024root__Slow.cpp Vshrike_top___024root__0__Slow.cpp Vshrike_top__Syms__Slow.cpp > Vshrike_top__ALL.cpp
+g++ -Os  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -I/home/sarang/embedded_projects/shrike-simt/model   -c -o Vshrike_top__ALL.o Vshrike_top__ALL.cpp
+g++    tb_top.o verilated.o verilated_threads.o Vshrike_top__ALL.a    -pthread -lpthread -latomic   -o tb_top
+rm Vshrike_top__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/sarang/embedded_projects/shrike-simt/build/obj'
+- V e r i l a t i o n   R e p o r t: Verilator 5.052 2026-09-05 rev v5.052
+- Verilator: Built from 0.058 MB sources in 3 modules, into 0.154 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 12.060 s (elab=0.004, cvt=0.020, bld=11.965); cpu 0.038 s on 1 threads; allocated 20.457 MB

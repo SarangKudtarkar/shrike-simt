@@ -1,0 +1,7 @@
+kernel,cycles,instr,lane_ops,conflicts,utilization_pct
+conflict,32,23,46,8,100.0
+diverge,44,43,70,0,81.4
+dot,26,25,50,0,100.0
+matvec_padded,58,57,114,0,100.0
+matvec_relu,65,56,112,8,100.0
+vecadd,27,26,52,0,100.0
